@@ -1,0 +1,39 @@
+[build-system]
+requires      = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where   = ["."]
+
+[project]
+name = "aurras"
+version = "0.1.0"
+authors = [
+    { name = "Mariem Ahmed", email = "mareiemahmed993@gmail.com" },
+    { name = "Esraa Youssef", email = "Esraa@gmail.com" },
+    { name = "Hussein Mukhtar", email = "HushmKun@outlook.com" },
+    
+]
+readme = "README.md"
+description = "A user interface to aurras-built NLP models."
+requires-python = ">=3.9"
+keywords = ["framework", "assistant"]
+license = { text = "MIT" }
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "",
+    "",
+    "",
+]
+dependencies = ["pandas", "protobuf", "huggingface-hub", "MarkupSafe", "timefhuman",
+                "numpy", "PyYAML", "requests", "tensorflow", "tzdata", "transformers"]
+
+[project.urls]
+Homepage        = "https://github.com/AnubisOS/Aurras"
+Issues          = "https://github.com/AnubisOS/Aurras/issues/"
